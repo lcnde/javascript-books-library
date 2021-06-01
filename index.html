@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script> <!--It's safe to put the script in the head as long as it has the async property. The async allows the html page to be downloaded before the script download has been finished. The old approach was to put the script tag at the end of the body, so it would get downloaded last, without blocking the download of the html page. With async the tag can stay in the head without causing bad user experience and without slowing down the website-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="create-book">
+        <h2>Create a new book</h2>
+        <form>
+          <label for="title">Book title:</label>
+          <input type="text" name="title"><br>
+          <label for="author">Author:</label>
+          <input type="text" name="author"><br>
+          <label for="npages">Number of pages:</label>
+          <input type="text" name="npages"><br>
+          <label for="read">Read?</label>
+          <div class="radiobuttons">
+            <div>
+              <input type="radio" name="readyes" value="true">
+              <span>Yes</span>
+            </div>
+            <div>
+              <input type="radio" name="readno" value="false">
+              <span>No</span>
+            </div>
+          </div>
+          <input type="submit" value="submit" onclick="addBookToLibrary();">
+        </form>
+      </div>
+      <div class="display-books">
+        <h2>Book Library</h2>
+        <table>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>N. of pages</th>
+            <th>Read?</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
