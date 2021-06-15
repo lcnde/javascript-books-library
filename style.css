@@ -1,7 +1,6 @@
 form {
   width: min-content;
   display: grid;
-  grid-auto-rows;
   row-gap: 5px;
 }
 
@@ -20,10 +19,6 @@ form {
   flex-direction: column;
   align-items: center;
   height: max-content;
-}
-
-.display-books {
-
 }
 
 table, th, td {

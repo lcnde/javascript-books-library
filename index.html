@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" async></script> <!--It's safe to put the script in the head as long as it has the async property. The async allows the html page to be downloaded before the script download has been finished. The old approach was to put the script tag at the end of the body, so it would get downloaded last, without blocking the download of the html page. With async the tag can stay in the head without causing bad user experience and without slowing down the website-->
+     <!--It's safe to put the script in the head as long as it has the async property. The async allows the html page to be downloaded before the script download has been finished. The old approach was to put the script tag at the end of the body, so it would get downloaded last, without blocking the download of the html page. With async the tag can stay in the head without causing bad user experience and without slowing down the website-->
   </head>
   <body>
     <div class="container">
@@ -17,7 +17,7 @@
           <input type="text" name="npages" id="npages"><br>
           <label for="read">Read?</label>    
           <input type="text" name="read" id="radio">
-          <input type="button" value="submit" onclick="addBookToLibrary();">
+          <input type="button" value="submit" onclick="addBookToLibraryClass();">
         </form>
       </div>
       <div class="display-books">
@@ -32,5 +32,6 @@
         </table>
       </div>
     </div>
+    <script src="script.js" async></script>
   </body>
 </html>
